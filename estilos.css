@@ -1,0 +1,64 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    box-sizing: border-box;
+    background-color: none;
+}
+
+footer{
+    background-color: #1c1c1c;
+    color:white;
+    text-align: left;
+    font-size: 8px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: solid 3px white;
+    color: white;
+    background: linear-gradient(to right, #1c1c1c, #2c3e50);
+    width: 100%;
+    height: 100px;
+}
+
+/* Contenedor para los botones */
+.Botones {
+    display: flex;            /* Usa flexbox */
+    justify-content: center;  /* Centra los botones horizontalmente */
+    align-items: center;      /* Centra los botones verticalmente */
+    height: calc(100vh - 100px); /* Ocupa el resto del espacio de la pantalla (restando el header) */
+    gap: 20px;                /* Espacio entre los botones */
+}
+
+/* Estilo de los botones */
+button {
+    width: 200px;        /* Ancho fijo del botón */
+    height: 50px;        /* Altura del botón (más pequeño que antes) */
+    background-color: #2C3930; /* Fondo verde */
+    color: white;        /* Texto blanco */
+    border: none;        /* Sin borde */
+    font-size: 16px;     /* Tamaño de fuente */
+    cursor: pointer;     /* Cambia el cursor al pasar el mouse */
+    border-radius: 8px;  /* Bordes redondeados */
+    display: flex;       /* Usa Flexbox para centrar el texto */
+    justify-content: center;  /* Centra el texto horizontalmente */
+    align-items: center; /* Centra el texto verticalmente */
+}
+
+/* Efecto hover de los botones */
+button:hover {
+    background-color: #3F4F44; /* Color de fondo al pasar el ratón */
+    color: white;              /* Cambiar color de texto */
+    transition: ease 1s;
+    transform: scale(1.1);
+}

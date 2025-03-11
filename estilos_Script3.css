@@ -1,0 +1,139 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+h2{
+    font-size: 30px;
+    position: absolute;
+    color: white;
+    cursor: pointer;
+    top: 5px;
+    left: 5px;
+}
+
+h2:hover{
+    color: #e74c3c;
+    transition: ease 1ms;
+    transform: scale(1.1);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: solid 3px white;
+    color: white;
+    background: linear-gradient(to right, #1c1c1c, #2c3e50);
+    width: 100%;
+    height: 100px;
+}
+
+body{ 
+    background-color:#6A9C89;
+}
+
+
+.formulario-militar{    
+    padding: 50px;
+    position: absolute;
+    display: grid;
+    right: 400px;
+    top: 112px;
+    justify-content: center;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: none;
+    gap: 30px;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    border: solid 1px white;
+    border-radius: 8px;
+    background-color: white;
+}
+
+label{
+    color: gray;
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+input{
+    font-size: 16px;
+    border: none;
+    border-bottom: solid 1px gray;
+    padding: 8px;
+    width: 100%;
+}
+
+select{
+    color: gray;
+    border: solid 1px gray;
+    border-radius: 8px;
+}
+
+
+.boton{
+    background-color: #27ae60;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.boton:hover{
+    background-color: #1e8449;
+    transition: ease 1s;
+    transform: scale(1.1);
+}
+
+
+/* Estilos para los mensajes */
+.mensaje-exito, .mensaje-error {
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.mensaje-exito {
+    background-color: #27ae60;
+}
+
+
+.mensaje-error {
+    background-color: #e74c3c; /* Rojo para el error */
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 18px;
+}
+
+/* Ocultar los campos del formulario cuando ya está registrado */
+.formulario-militar input,
+.formulario-militar select,
+.formulario-militar .boton {
+    display: block;
+}
+
+.formulario-militar.registrado input,
+.formulario-militar.registrado select,
+.formulario-militar.registrado .boton {
+    display: none;
+}
+
+  
